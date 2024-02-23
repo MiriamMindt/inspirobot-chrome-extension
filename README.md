@@ -5,6 +5,24 @@ A brief moment of inspiration during your day.
 
 This Chrome extension provides you with a dose of inspiration by displaying a unique, auto-generated quote image from InspiroBot each time the extension's popup is opened.
 
+--- 
+
+## Update for Firefox Compatibility (Manifest V2)
+
+We're excited to announce that our extension is now compatible with Firefox! In order to ensure compatibility, we have made the following updates:
+
+- **Reverted to Manifest V2**: The extension has been reverted to use Manifest Version 2 to maintain compatibility with Firefox. Please note that Manifest V2 is deprecated in Chrome, and support will be removed in 2024. Chrome users are advised to refer to the [Manifest V2 deprecation timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline) for more details and plan for the transition to Manifest V3. Please use the main branch files instead of this one!
+
+- **Added Polyfill**: To bridge compatibility between Chrome and Firefox, the [Mozilla WebExtension Polyfill](https://github.com/mozilla/webextension-polyfill) has been included. This polyfill allows us to use the `browser` namespace and promises, which are standard in Firefox extension development, while retaining compatibility with Chrome.
+
+- **Firefox Availability**: Users can now install and enjoy this extension in Firefox! It has been tested and ensured that all features work seamlessly across both browsers, providing users with the same great experience no matter their choice of browser.
+
+However, due to the deprecated manifest, the main branch version is still recommended for Chrome users. 
+
+Firefox users are encouraged to try out the extension and any feedback to improve their experience is welcome. For any issues or contributions, please feel free to open an issue or submit a pull request on this GitHub repository.
+
+---
+
 ## About InspiroBot
 
 InspiroBot is an AI that generates inspirational quote images. The InspiroBot API allows developers to retrieve a URL to a newly generated quote image. The API endpoint is:
