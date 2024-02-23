@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inspension</title>
+    <style>
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          background: transparent; /* Make the background transparent */
+        }
+        .popup-content {
+          font-family: 'Arial', sans-serif;
+          width: 300px;
+          min-height: 300px; /* Set a minimum height */
+          border-radius: 15px; /* Rounded corners for the popup */
+          overflow: hidden; /* Ensures the content respects the border radius */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+          margin: 0;
+          padding: 20px;
+          font-size: 18px;
+          /* The background and text colors will be set by JavaScript */
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block; /* Removes bottom space/line */
+        }
+      </style>
+  </head>
+  <body>
+    <div id="popup-content" class="popup-content">
+      <h1 id="popup-header">Your momentary source of inspiration</h1>
+      <img id="inspiro-image" src="" alt="InspiroBot Image">
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

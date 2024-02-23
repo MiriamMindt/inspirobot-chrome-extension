@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Inspension",
+  "description": "Bringing you your momentary source of inspiration so you may continue with your work mentally refreshed. Live, laugh, love.",
+  "version": "1.0",
+  "browser_action": {
+      "default_popup": "hello.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "permissions": [
+      "storage",
+      "https://inspirobot.me/*"
+    ]
+  }
