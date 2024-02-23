@@ -3,19 +3,17 @@ A brief moment of inspiration during your day.
 
 # InspiroBot Chrome Extension
 
-This Chrome extension provides users with a dose of inspiration by displaying a unique, auto-generated quote image from InspiroBot each time the extension's popup is opened.
+This Chrome extension provides you with a dose of inspiration by displaying a unique, auto-generated quote image from InspiroBot each time the extension's popup is opened.
 
 ## About InspiroBot
 
 InspiroBot is an AI that generates inspirational quote images. The InspiroBot API allows developers to retrieve a URL to a newly generated quote image. The API endpoint is:
 https://inspirobot.me/api?generate=true
-
-
 When this endpoint is called, it returns a plain text response with a direct URL to the generated image.
 
 ## How the Extension Works
 
-The extension uses a background script to call the InspiroBot API. When the user clicks on the extension icon, a popup is displayed, and the script fetches a new quote image by making a request to the InspiroBot API. The image URL received in the response is then used to update the `src` attribute of an `img` element within the popup, displaying the inspirational quote image to the user.
+The extension uses a background script to call the InspiroBot API. When you click on the extension icon, a popup is displayed, and the script fetches a new quote image by making a request to the InspiroBot API. The image URL received in the response is then used to update the `src` attribute of an `img` element within the popup, displaying the inspirational quote image to the user.
 
 ## Installation
 
